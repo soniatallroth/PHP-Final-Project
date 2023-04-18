@@ -58,15 +58,35 @@ nav a:hover {
     height: 40px;
 }
 
-/* footer */
-footer {
-    background: #f5f5f5;
-    width: 100%;
-    height: 60px;
-    text-align: center;
+/* FOOTER */
+span {
+    font-weight: 500;
 }
-.footer-link:hover {
-    text-decoration: underline;
+.footer-links {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    background: #f48d79;
+    color: #000;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column p {
+    line-height: 24px;
+    font-weight: 300;
+}
+.social-media {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media img {
+    height: 35px;
 }
 
 /* INDEX.PHP */
@@ -201,16 +221,20 @@ input.nosubmit::placeholder {
 /* connect with community */
 .connect-with-community {
     margin: 60px 0px 0px 0px;
-    padding: 50px 100px;
     background-color: #017075;
     width: 100%;
+    padding: 50px 0px;
 }
 .connect-with-community .question-text,
 .connect-with-community p {
     color: white;
+    padding: 0px 100px;
 }
 .connect-with-community p {
-    padding: 16px 0px;
+    padding: 16px 100px 32px;
 }
 
 /* fake image caurousel */
+.carousel-images {
+    width: 100%;
+}
