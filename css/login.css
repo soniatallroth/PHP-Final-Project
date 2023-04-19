@@ -1,0 +1,43 @@
+/* LOGIN PAGE specific stuff */
+
+.login-header {
+    border: transparent;
+}
+.login-container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login {
+    border-radius: 12px;
+    width: 500px;
+    background-color: #dee2e6;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+}
+.welcome-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.welcome-text h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px;
+}
+.button-holder {
+    text-align: center;
+}
+input[type="submit"] {
+    color: #fff;
+    background-color: #017075;
+    border-radius: 6px;
+    text-align: center;
+    margin: 20px 20px 20px 10px;
+    padding: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #016f75ab;
+}

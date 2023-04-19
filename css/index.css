@@ -1,1 +1,55 @@
 /* styles for index.html */
+
+/* intro images */
+.who-are-we {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.7fr 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "intro-image question-text"
+        "intro-image answer-text"
+        "intro-image answer-text";
+    margin: 50px 0px;
+}
+.intro-image {
+    grid-area: intro-image;
+    max-width: 450px;
+}
+
+/* what can I do? */
+.what-can-i-do {
+    display: flex;
+    justify-content: space-between;
+}
+.intro-card {
+    border: 2px solid #017075;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 24px;
+    border-radius: 12px;
+}
+.intro-card h1 {
+    font-size: 30px;
+}
+.intro-card p {
+    margin: 20px 0px;
+}
+.badge {
+    height: 57px;
+    margin: 20px 0px;
+}
+.button {
+    background-color: #f48d79;
+    border-radius: 12px;
+    width: 60%;
+    margin: auto;
+}
+.button p {
+    padding: 10px;
+}
+.button:hover {
+    background-color: #f48e79b0;
+}

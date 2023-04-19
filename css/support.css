@@ -1,0 +1,97 @@
+/* specific support styling */
+
+/* accordion fold down */
+.faq-subheader {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 2px solid #017075;
+}
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.faq-section {
+    margin: 30px 20px 40px 20px;
+    min-width: 450px;
+}
+
+.faq-content p {
+    font-size: 16px;
+    padding: 20px;
+}
+summary {
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    padding: 10px;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #017075;
+}
+details[open] summary ~ * {
+    background-color: #016f7521;
+}
+details[open] .faq-content ~ * {
+    background-color: blue;
+}
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+details > summary::after {
+    position: absolute;
+    content: "<";
+    right: 20px;
+}
+details[open] > summary::after {
+    position: absolute;
+    content: "∨";
+    right: 20px;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* form styling stuff */
+.support-connect-with-community {
+    display: flex;
+}
+.connect-left {
+    width: 50%;
+}
+.connect-right {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    margin-right: 100px;
+}
+#support-form {
+    padding: 20px;
+}
+#red {
+    color: red;
+}
+.support-form label {
+    font-size: 18px;
+}
+#cancel {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}

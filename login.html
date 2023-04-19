@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/javascript.js"></script>
+</head>
+<body>
+    <!--Header (Login page)-->
+    <header class="login-header">
+        <div class="header-left">
+            <a href="index.html"><img class="header-logo" src="images/current logo.png" alt="PHP Logo"></a>
+        </div>
+    </header>
+    <!--Body content-->
+    <main>
+        <div class="login-container">
+            <div class="login">
+                <div class="welcome-text">
+                    <h2>Welcome!</h2>
+                    <p>Please enter your details.</p>
+                </div>
+                <form id="form_login" action="index.html" method="POST">
+                    <div id="form_login_feedback">
+                        <label class="text-label" for="username">Your username</label><br>
+                        <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
+                        <label class="text-label" for="password">Your password</label><br>
+                        <input class="text-input" id="password" name="password" type="text" placeholder="********">
+                        <div class="button-holder">
+                            <input id="submit-btn" type="submit" value="Login">
+                        </div>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </main>
+
+        <!--Footer (no footer)-->
+    </body>
+    </html>
