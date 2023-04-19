@@ -36,10 +36,9 @@ summary {
     border-bottom: 1px solid #017075;
 }
 details[open] summary ~ * {
-    background-color: #016f7521;
+    background-color: #016f7547;
 }
 details[open] .faq-content ~ * {
-    background-color: blue;
 }
 @keyframes sweep {
     0% {
@@ -83,15 +82,8 @@ details > summary::-webkit-details-marker {
     padding: 20px;
 }
 #red {
-    color: red;
+    color: #ff0228;
 }
 .support-form label {
     font-size: 18px;
-}
-#cancel {
-    background-color: #000;
-    color: #fff;
-    padding: 8px 30px;
-    border-radius: 5px;
-    margin: 10px 0px;
 }

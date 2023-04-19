@@ -24,16 +24,17 @@
             <div class="login">
                 <div class="welcome-text">
                     <h2>Welcome!</h2>
-                    <p>Please enter your details.</p>
+                    <p>Please enter your username and password.</p>
                 </div>
                 <form id="form_login" action="index.html" method="POST">
                     <div id="form_login_feedback">
                         <label class="text-label" for="username">Your username</label><br>
                         <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
                         <label class="text-label" for="password">Your password</label><br>
-                        <input class="text-input" id="password" name="password" type="text" placeholder="********">
+                        <input class="text-input" id="password" name="password" type="password" placeholder="********">
                         <div class="button-holder">
-                            <input id="submit-btn" type="submit" value="Login">
+                            <input id="button-blue" type="submit" value="Login">
+                            <input id="button-pink" type="submit" value="Sign up">
                         </div>
                     </div>
                 </form>

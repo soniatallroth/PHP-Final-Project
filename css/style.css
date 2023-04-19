@@ -223,7 +223,8 @@ input.page-nosubmit::placeholder {
 
 /* form styling*/
 
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     font-size: 16px;
     padding: 8px;
@@ -233,7 +234,8 @@ input[type="text"] {
     color: black;
     background-color: #fff;
 }
-input[type="text"]::placeholder {
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
     color: #0000007a;
 }
 .button-container {
@@ -241,7 +243,7 @@ input[type="text"]::placeholder {
     text-align: center;
     justify-content: space-evenly;
 }
-#submit {
+#button-blue {
     background-color: #017075;
     color: #fff;
     padding: 10px;
@@ -249,11 +251,18 @@ input[type="text"]::placeholder {
     margin: 10px 0px;
     padding: 8px 30px;
 }
-#submit:hover {
+#button-blue:hover {
     background-color: #016f75b4;
 }
-#cancel:hover {
-    background-color: #000000b3;
+#button-pink:hover {
+    background-color: #f48e7972;
+}
+#button-pink {
+    background-color: #f48d79;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    margin: 10px 0px;
 }
 
 /* Footer */
