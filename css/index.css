@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 .intro-card {
-    border: 2px solid #017075;
+    border: 2px solid var(--teal-main);
     width: 30%;
     text-align: center;
     margin-top: 20px;
@@ -42,7 +42,7 @@
     margin: 20px 0px;
 }
 .button {
-    background-color: #f48d79;
+    background-color: var(--coral-main);
     border-radius: 12px;
     width: 60%;
     margin: auto;
@@ -51,5 +51,5 @@
     padding: 10px;
 }
 .button:hover {
-    background-color: #f48e79b0;
+    background-color: var(--coral-light);
 }

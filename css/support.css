@@ -6,7 +6,7 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     padding: 0px 0px 10px 0px;
-    border-bottom: 2px solid #017075;
+    border-bottom: 2px solid var(--teal-main);
 }
 .faq {
     display: flex;
@@ -27,16 +27,16 @@ summary {
     list-style-type: none;
     font-size: 18px;
     font-weight: 300;
-    color: black;
+    color: var(--black);
     padding: 10px;
     outline: none;
     text-align: left;
     cursor: pointer;
     position: relative;
-    border-bottom: 1px solid #017075;
+    border-bottom: 1px solid var(--teal-main);
 }
 details[open] summary ~ * {
-    background-color: #016f7547;
+    background-color: var(--light-gray);
 }
 details[open] .faq-content ~ * {
 }
@@ -73,7 +73,7 @@ details > summary::-webkit-details-marker {
 }
 .connect-right {
     width: 50%;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 4px;
     padding: 20px;
     margin-right: 100px;
@@ -82,7 +82,7 @@ details > summary::-webkit-details-marker {
     padding: 20px;
 }
 #red {
-    color: #ff0228;
+    color: var(--red);
 }
 .support-form label {
     font-size: 18px;
