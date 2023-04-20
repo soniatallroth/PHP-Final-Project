@@ -9,11 +9,11 @@
 }
 .search-dropdowns {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
 }
 .search-page-intro-container {
-    max-width: 700px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +25,7 @@
 .search-dropdowns select {
     font-size: 14px;
     max-width: 100px;
+    margin-right: 20px;
 }
 
 form.search-nosubmit {
@@ -38,7 +39,7 @@ input.search-nosubmit {
     font-size: 16px;
     border-radius: 6px;
     color: var(--black);
-    width: 700px;
+    width: 900px;
     border: 1.5px solid black;
     padding: 18px 4px 18px 40px;
     background: transparent
@@ -82,4 +83,12 @@ h1 {
 }
 #gray {
     color: var(--gray);
+}
+.pagination-div {
+    display: flex;
+    justify-content: center;
+}
+#pagination {
+    height: 50px;
+    margin: 30px 0px 50px;
 }

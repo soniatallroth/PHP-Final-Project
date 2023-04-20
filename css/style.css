@@ -294,7 +294,17 @@ select {
     color: var(--white);
     padding: 10px;
     border-radius: 5px;
-    margin: 8px 0px;
+    margin: 8px 20px;
+}
+#button-gray:hover {
+    background-color: #d8d8d8;
+}
+#button-gray {
+    background-color: var(--light-gray);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 8px 20px;
 }
 
 /* tags */
