@@ -1,9 +1,13 @@
 /* styles for the make a post page */
-.center {
+.post_header {
+    margin-top: 50px;
+}
+
+#center {
     display: flex;
     justify-content: center;
 }
-.post-container {
+#post_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1.7fr 0.3fr;
@@ -15,73 +19,49 @@
         "left right"
         "left right"
         "bottom bottom";
-    margin: 100px 0px;
+    margin: 50px 0px;
     justify-items: center;
     max-width: 886px;
 }
-
-.left {
+#left {
     grid-area: left;
     max-width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.left img {
+#left img {
     max-width: 450px;
 }
-
-.post-buttons {
+#post_buttons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0px 10px;
 }
-
-.right {
+#right {
     grid-area: right;
     min-width: 400px;
     float: left;
 }
-
-.bottom {
+#bottom {
     grid-area: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bottom p {
+#bottom p {
     color: var(--black);
     padding: 0px 30px;
 }
-.bottom p:hover {
+#bottom p:hover {
     text-decoration: underline;
 }
-
-.post-buttons #button-pink {
-    width: 230px;
-}
-
-.post-buttons select {
+#post_buttons select {
     width: 150px;
 }
-.post-buttons input[type="text"] {
-    margin: 20px 0px;
-    border: 1.5px solid var(--black);
-    max-width: 200px;
-}
 
-.right input[type="text"] {
-    margin: 10px 0px;
-    border: 1.5px solid var(--black);
-    max-width: 450px;
-}
-.right textarea {
-    max-width: 450px;
-    margin: 10px 0px;
-    border: 1.5px solid var(--black);
+/* post-specific styling */ 
+#right textarea {
     height: 200px;
-}
-
-.tag-container {
 }

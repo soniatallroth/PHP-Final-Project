@@ -1,37 +1,46 @@
-.message-container {
+/* message specific css */
+
+/* message header */
+#message_container {
     margin: 50px 0px;
 }
-.messages-heading {
+#message_heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.messages-heading-right {
+#message_heading_right {
     display: flex;
     align-items: center;
 }
-.main-message-section {
+#message_heading_right a {
+    padding-right: 20px;
+}
+/* message body */
+#message_body {
     margin: 20px 0px;
     display: flex;
 }
-.message-tabs {
+#message_tab {
     width: 250px;
     margin-right: 20px;
 }
-.message-tabs p {
+#message_tab p {
     background-color: var(--white);
     padding: 15px;
     border-radius: 6px;
 }
-.message-tabs p:hover {
+#message_tab p:hover {
     background-color: var(--light-gray);
 }
-.message-list-container {
+#message_list_container {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.single-message {
+
+/* individual message */
+.message {
     display: grid;
     grid-template-columns: 0.2fr 2.3fr 0.5fr;
     grid-template-rows: 0.6fr 0.8fr;
@@ -50,37 +59,33 @@
     padding: 10px;
     border-radius: 0px;
 }
-.single-message-top {
+.message_top {
     border-radius: 6px 6px 0px 0px;
 }
-.single-message-bottom {
+.message_bottom {
     border-radius: 0px 0px 6px 6px;
     border-bottom: 1px solid var(--light-gray);
 }
-
-.message-avatar {
+#avatar {
     grid-area: message-avatar;
     justify-self: center;
     align-self: center;
     padding-top: 5px;
 }
-
-.message-name {
+#name {
     grid-area: message-name;
     align-self: center;
     margin-left: 10px;
 }
-
-.message-tag {
+#tag {
     grid-area: message-tag;
     align-self: center;
     margin-left: 10px;
 }
-
-.message-time {
+#time {
     grid-area: message-time;
     align-self: center;
 }
-.message-time p {
+#time p {
     color: var(--gray);
 }

@@ -14,39 +14,40 @@
 <body>
     <!--Header-->
     <header>
-        <div class="header-left">
-            <a href="index.html"><img class="header-logo" src="images/current logo.png" alt="PHP Logo"></a>
+        <div class="left_header">
+            <a href="index.html"><img class="logo_header" src="images/current logo.png" alt="PHP Logo"></a>
             <nav>
-                <a class="navlinks" href="search.html">Posts</a>
-                <a class="navlinks" href="message.html">Messages</a>
-                <a class="navlinks" href="support.html">Support & FAQ</a>
+                <a href="search.html">Posts</a>
+                <a href="message.html">Messages</a>
+                <a href="support.html">Support & FAQ</a>
             </nav>
         </div>
-        <div class="header-right">
-            <a href="post.html"><input id="button-coral" type="submit" value="Create Post"></a>
-            <img class="bell" src="images/bell-fill.png" alt="Bell icon">
+        <div class="right_header">
+            <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
+            <img class="black_bell" src="images/bell-fill.png" alt="Bell icon">
             <a href="login.html"><img class="avatar" src="images/1.0 Avatar.png" alt="Avatar"></a>
         </div>
     </header>
         <!--Hero image (single page)-->
-        <div id="page-intro">
-            <img id="page-hero-image" src="images/heroimagesupport.png" alt="people filling containers with bread">
-            <div id="page-hero-text-container">
-                <h2 id="page-hero-text">Support & FAQ</h2>
-                <p id="page-hero-subtext">Search or browse for topics to find what you're looking for.</p>
-                <form class="page-nosubmit">
-                    <input class="page-nosubmit" type="search" placeholder="Search here">
+        <div class="hero">
+            <img src="images/heroimagesupport.png" alt="people filling containers with bread">
+            <div class="hero_text_container">
+                <h3 class="hero_title">Support & FAQ</h3>
+                <p class="hero_subtitle">Search or browse for topics to find what you're looking for.</p>
+                <form id="support">
+                    <input id="support" type="search" placeholder="Search here">
                 </form>
             </div>
         </div>
         <!--Body content-->
         <main>
-            <div class="faq">
-                <div class="faq-section">
-                    <p class="faq-subheader">Creating & Editing Posts</p>
+            <div class="accordion">
+                <!--Start of accordion section-->
+                <div class="accordion_section">
+                    <p class="accordion_subheader">Creating & Editing Posts</p>
                     <details>
                         <summary>How do I make a post?</summary>
-                        <div class="faq-content">
+                        <div class="accordion_content">
                             <p>Lorem ipsum</p>
                         </div>
                     </details>
@@ -69,11 +70,13 @@
                         </div>
                     </details>
                 </div>
-                <div class="faq-section">
-                    <p class="faq-subheader">Profile & Account</p>
+                <!--End of accordion section-->
+                                <!--Start of accordion section-->
+                <div class="accordion_section">
+                    <p class="accordion_subheader">Profile & Account</p>
                     <details>
                         <summary>How do I make a post?</summary>
-                        <div class="faq-content">
+                        <div class="accordion_content">
                             <p>Lorem ipsum</p>
                         </div>
                     </details>
@@ -96,11 +99,13 @@
                         </div>
                     </details>
                 </div>
-                <div class="faq-section">
-                    <p class="faq-subheader">Volunteers</p>
+                <!--End of accordion section-->
+                                <!--Start of accordion section-->
+                <div class="accordion_section">
+                    <p class="accordion_subheader">Volunteers</p>
                     <details>
                         <summary>How do I make a post?</summary>
-                        <div class="faq-content">
+                        <div class="accordion_content">
                             <p>Lorem ipsum</p>
                         </div>
                     </details>
@@ -123,11 +128,13 @@
                         </div>
                     </details>
                 </div>
-                <div class="faq-section">
-                    <p class="faq-subheader">People In Need</p>
+                <!--End of accordion section-->
+                                <!--Start of accordion section-->
+                <div class="accordion_section">
+                    <p class="accordion_subheader">People in Need</p>
                     <details>
                         <summary>How do I make a post?</summary>
-                        <div class="faq-content">
+                        <div class="accordion_content">
                             <p>Lorem ipsum</p>
                         </div>
                     </details>
@@ -150,11 +157,13 @@
                         </div>
                     </details>
                 </div>
-                <div class="faq-section">
-                    <p class="faq-subheader">Privacy & Legal Issues</p>
+                <!--End of accordion section-->
+                                <!--Start of accordion section-->
+                <div class="accordion_section">
+                    <p class="accordion_subheader">Privacy & Legal Issues</p>
                     <details>
                         <summary>How do I make a post?</summary>
-                        <div class="faq-content">
+                        <div class="accordion_content">
                             <p>Lorem ipsum</p>
                         </div>
                     </details>
@@ -177,11 +186,13 @@
                         </div>
                     </details>
                 </div>
-                <div class="faq-section">
-                    <p class="faq-subheader">Technical Support</p>
+                <!--End of accordion section-->
+                                <!--Start of accordion section-->
+                <div class="accordion_section">
+                    <p class="accordion_subheader">Technical Support</p>
                     <details>
                         <summary>How do I make a post?</summary>
-                        <div class="faq-content">
+                        <div class="accordion_content">
                             <p>Lorem ipsum</p>
                         </div>
                     </details>
@@ -204,17 +215,18 @@
                         </div>
                     </details>
                 </div>
+                <!--End of accordion section-->
             </div>
         </main>
-        <div class="blue-module support-blue-module">
-            <div class="connect-left">
-                <div class="question-text">
-                    <h2 id="intro-question">Still can't find a solution?</h2>
-                    <div class="line"></div>
+        <div class="blue_module support_module">
+            <div id="left">
+                <div class="title_header">
+                    <h1>Connect with the community</h1>
+                    <div class="title_line"></div>
                 </div>
                 <p>Fill out the form to submit a support request, or view our contact information and resources available below.</p>
             </div>
-            <div class="connect-right">
+            <div id="right">
                 <form id="support-form">
                     <label>First name <span id="red">*</span></label><br>
                     <input type="text" placeholder="Jamie"><br>
@@ -222,43 +234,40 @@
                     <input type="text" placeholder="Schwobe"><br>
                     <label>Email address <span id="red">*</span></label><br>
                     <input type="text" placeholder="email.example@mail.com"><br>
-                <label>Reason for request <span id="red">*</span></label><br>
+                    <label>Reason for request <span id="red">*</span></label><br>
                     <input type="text" placeholder="Select from dropdown"><br> 
                     <label>How can we help you? <span id="red">*</span></label><br>
                     <input type="text" placeholder="Type here"><br>
-                    <div class="button-container">
-                        <input id="button-teal" type="submit" value="Submit">
-                        <input id="button-coral" type="submit" value="Cancel">
+                    <div class="button_container">
+                        <a href="post.html"><input class="teal_button" type="submit" value="Submit"></a>
+                        <a href="post.html"><input class="coral_button" type="submit" value="Clear"></a>
                     </div>
-
-
                 </form>
             </div>
         </div>
-
-        <!--Footer-->
+    <!--Footer-->
     <footer>
-        <div class="footer-links">
-            <div class="column">
+        <div class="footer_container">
+            <div class="footer_column">
                 <p><span>Phone</span></p>
                 <p>(000) 000-0000</p><br>
                 <p><span>Email</span></p>
                 <p>wearePHP@example.org</p>
             </div>
-            <div class="column">
+            <div class="footer_column">
                 <p><span>P.O. Box Address</span></p>
                 <p>123 S Hawyee Ave.</p>
                 <p>Stevens Point, WI 54481</p>
                 <p>Suite 502</p>
             </div>
-            <div class="column">
+            <div class="footer_column">
                 <p><span>Resources</span></p>
                 <p>Privacy Policy</p>
                 <p>Careers</p>
                 <p>Sponsorship & Partners</p> 
             </div>
         </div>
-        <div class="social-media">
+        <div class="footer_social">
             <a href="#"><img src="images/social media footer.png"></a>
         </div>
     </footer>

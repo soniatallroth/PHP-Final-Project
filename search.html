@@ -14,39 +14,39 @@
 <body>
     <!--Header-->
     <header>
-        <div class="header-left">
-            <a href="index.html"><img class="header-logo" src="images/current logo.png" alt="PHP Logo"></a>
+        <div class="left_header">
+            <a href="index.html"><img class="logo_header" src="images/current logo.png" alt="PHP Logo"></a>
             <nav>
-                <a class="navlinks" href="search.html">Posts</a>
-                <a class="navlinks" href="message.html">Messages</a>
-                <a class="navlinks" href="support.html">Support & FAQ</a>
+                <a href="search.html">Posts</a>
+                <a href="message.html">Messages</a>
+                <a href="support.html">Support & FAQ</a>
             </nav>
         </div>
-        <div class="header-right">
-            <a href="post.html"><input id="button-coral" type="submit" value="Create Post"></a>
-            <img class="bell" src="images/bell-fill.png" alt="Bell icon">
+        <div class="right_header">
+            <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
+            <img class="black_bell" src="images/bell-fill.png" alt="Bell icon">
             <a href="login.html"><img class="avatar" src="images/1.0 Avatar.png" alt="Avatar"></a>
         </div>
     </header>
-    <!--Search bar-->
-    <div class="search-page-intro">
-        <div class="search-page-intro-container">
-            <form class="search-nosubmit">
-                <input class="search-nosubmit" type="text" placeholder="How would you like to volunteer?">
+    <!--Search bar (hero image)-->
+    <div id="search_hero">
+        <div id="search_container">
+                <h3 class="hero_title">How would you like to volunteer?</h3>
+                <p class="hero_subtitle">Search for a volunteer opportunity in your community.</p>
+            <form id="search">
+                <input id="search" type="text" placeholder="Search here">
             </form>
             <p>Filters</p>
-            <div class="search-dropdowns">
+            <div id="search_dropdowns">
                 <select>
                     <option>Time ∨</option>
                     <option>Time needed</option>
                     <option>Time needed</option>
-
                 </select>
                 <select>
                     <option>Type ∨</option>
                     <option>Type of work</option>
                     <option>Type of work</option>
-
                 </select>
                 <select>
                     <option>Date ∨</option>
@@ -63,157 +63,163 @@
             <p>Sort ∨</p>
         </div>
     </div>
-
     <!--Body content-->
     <main>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="post">
-            <div class="post-container">
-                <div class="search-left">
-                    <img src="images/postimage.png" alt="picture of house" width="300px">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
                 </div>
-                <div class="search-right">
-                    <div class="tag-container">
-                        <p class="teal-tag">Placeholder</p>
-                        <p class="teal-tag">Placeholder</p>
-
-                    </div>
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
-                    <br><p id="gray">3 days ago</p>
-                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
             </div>
         </div>
-        <div class="pagination-div">
-            <img id="pagination" src="images/pagination.png">
+        <!--End of post-->
+                <!--Start of post-->
+        <div id="post">
+            <div id="left">
+                <img src="images/postimage.png" alt="picture of house">
+            </div>
+            <div id="right">
+                <div class="tag_container">
+                    <p class="teal_tag">Placeholder</p>
+                    <p class="coral_tag">Placeholder</p>
+                </div>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <br><p id="gray">3 days ago</p>
+            </div>
         </div>
-
+        <!--End of post-->
+        <div id="pagination">
+            <img src="images/pagination.png" alt="pagination">
+        </div>
     </main>
-
     <!--Footer-->
     <footer>
-        <div class="footer-links">
-            <div class="column">
+        <div class="footer_container">
+            <div class="footer_column">
                 <p><span>Phone</span></p>
                 <p>(000) 000-0000</p><br>
                 <p><span>Email</span></p>
                 <p>wearePHP@example.org</p>
             </div>
-            <div class="column">
+            <div class="footer_column">
                 <p><span>P.O. Box Address</span></p>
                 <p>123 S Hawyee Ave.</p>
                 <p>Stevens Point, WI 54481</p>
                 <p>Suite 502</p>
             </div>
-            <div class="column">
+            <div class="footer_column">
                 <p><span>Resources</span></p>
                 <p>Privacy Policy</p>
                 <p>Careers</p>
                 <p>Sponsorship & Partners</p> 
             </div>
         </div>
-        <div class="social-media">
+        <div class="footer_social">
             <a href="#"><img src="images/social media footer.png"></a>
         </div>
     </footer>

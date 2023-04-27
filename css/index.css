@@ -1,6 +1,6 @@
 /* styles for index.html */
 
-/* hero image (home page specific) */
+/* hero image (home) */
 #intro {
     position: relative;
     color: var(--white);
@@ -28,7 +28,7 @@
     font-size: 20px;
     padding: 10px;
 }
-form.nosubmit {
+form#search {
     border: none;
     padding: 0;
     position: absolute;
@@ -37,7 +37,7 @@ form.nosubmit {
     left: 50%;
     transform: translate(-50%);
 }
-input.nosubmit {
+input#search {
     margin: 12px;
     font-size: 16px;
     border-radius: 6px;
@@ -51,16 +51,16 @@ input.nosubmit {
     background-color: var(--white);
 }
 @media (max-width: 700px) {
-    input.nosubmit {
+    input#search {
         width: 400px;
     }
 }
-input.nosubmit::placeholder {
+input#search::placeholder {
     color: var(--gray);
 }
 
-/* intro images */
-.who-are-we {
+/* intro images/text */
+#intro_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.7fr 1fr;
@@ -70,50 +70,14 @@ input.nosubmit::placeholder {
         "intro-image question-text"
         "intro-image answer-text"
         "intro-image answer-text";
-    margin: 50px 0px;
+    margin: 100px 0px 50px 0px;
 }
-.intro-image {
+#intro_image {
     grid-area: intro-image;
-    max-width: 450px;
-}
-
-/* what can I do? */
-.what-can-i-do {
-    display: flex;
-    justify-content: space-between;
-}
-.intro-card {
-    border: 2px solid var(--teal-main);
-    width: 30%;
-    text-align: center;
-    margin-top: 20px;
-    padding: 24px;
-    border-radius: 12px;
-}
-.intro-card h1 {
-    font-size: 30px;
-}
-.intro-card p {
-    margin: 20px 0px;
-}
-.badge {
-    height: 57px;
-    margin: 20px 0px;
-}
-.button {
-    background-color: var(--coral-main);
-    border-radius: 12px;
-    width: 60%;
-    margin: auto;
-}
-.button p {
-    padding: 10px;
-}
-.button:hover {
-    background-color: var(--coral-light);
+    max-width: 500px;
 }
 
 /* fake image caurousel */
-.carousel-images {
+#carousel-images {
     width: 100%;
 }

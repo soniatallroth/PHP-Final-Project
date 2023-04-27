@@ -13,35 +13,32 @@
 </head>
 <body>
     <!--Header (Login page)-->
-    <header class="login-header">
-        <div class="header-left">
-            <a href="index.html"><img class="header-logo" src="images/current logo.png" alt="PHP Logo"></a>
+    <header>
+        <div class="left_header">
+            <a href="index.html"><img class="logo_header" src="images/current logo.png" alt="PHP Logo"></a>
         </div>
     </header>
     <!--Body content-->
     <main>
-        <div class="login-container">
-            <div class="login">
-                <div class="welcome-text">
-                    <h2>Welcome!</h2>
+        <div id="login_container">
+            <div id="login">
+                <div id="login_header">
+                    <h1>Welcome!</h1>
                     <p>Please enter your username and password.</p>
                 </div>
-                <form id="form_login" action="index.html" method="POST">
-                    <div id="form_login_feedback">
-                        <label class="text-label" for="username">Your username</label><br>
-                        <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
-                        <label class="text-label" for="password">Your password</label><br>
-                        <input class="text-input" id="password" name="password" type="password" placeholder="********">
-                        <div class="button-holder">
-                            <input id="button-teal" type="submit" value="Login">
-                            <input id="button-coral" type="submit" value="Sign up">
-                        </div>
+                <form>
+                    <label class="text-label" for="username">Your username</label><br>
+                    <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
+                    <label class="text-label" for="password">Your password</label><br>
+                    <input class="text-input" id="password" name="password" type="password" placeholder="********">
+                    <div class="button_container">
+                        <a href="index.html"><input class="teal_button" type="submit" value="Log In"></a>
+                        <a href="index.html"><input class="coral_button" type="submit" value="Sign Up"></a>
                     </div>
                 </form>
             </div>  
         </div>
     </main>
-
-        <!--Footer (no footer)-->
+    <!--Footer (no footer)-->
     </body>
     </html>

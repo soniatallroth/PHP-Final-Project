@@ -1,280 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/message.css">
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/javascript.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/message.css" />
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/javascript.js"></script>
+    </head>
+    <body>
     <!--Header-->
     <header>
-      <div class="header-left">
-          <a href="index.html"><img class="header-logo" src="images/current logo.png" alt="PHP Logo"></a>
-          <nav>
-              <a class="navlinks" href="search.html">Posts</a>
-              <a class="navlinks" href="message.html">Messages</a>
-              <a class="navlinks" href="support.html">Support & FAQ</a>
-          </nav>
-      </div>
-      <div class="header-right">
-          <a href="post.html"><input id="button-coral" type="submit" value="Create Post"></a>
-          <img class="bell" src="images/bell-fill.png" alt="Bell icon">
-          <a href="login.html"><img class="avatar" src="images/1.0 Avatar.png" alt="Avatar"></a>
-      </div>
-  </header>
-    <!--Body content-->
-    <main>
-      <div class="message-container">
-        <div class="messages-heading">
-          <div class="question-text">
-            <h2 id="intro-question">Messages</h2>
-            <div class="line"></div>
-          </div>
-          <div class="messages-heading-right">
-            <input id="button-gray" type="submit" value="Archive">
-            <input id="button-gray" type="submit" value="Delete">
-            <p>Select all</p>
-          </div>
+        <div class="left_header">
+            <a href="index.html"><img class="logo_header" src="images/current logo.png" alt="PHP Logo"></a>
+            <nav>
+                <a href="search.html">Posts</a>
+                <a href="message.html">Messages</a>
+                <a href="support.html">Support & FAQ</a>
+            </nav>
         </div>
-        <div class="main-message-section">
-          <div class="message-tabs">
-            <p>All Messages</p>
-            <p>Person In Need</p>
-            <p>Volunteer</p>
-            <p>Archive</p>
-            <p>Trash</p>
-          </div>
-          <div class="message-list-container">
-            <div class="single-message single-message-top">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="coral-tag">Volunteer</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="coral-tag">Volunteer</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="teal-tag">Person In Need</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="coral-tag">Volunteer</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="teal-tag">Person In Need</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="teal-tag">Person In Need</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="teal-tag">Person In Need</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="coral-tag">Volunteer</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="coral-tag">Volunteer</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="coral-tag">Volunteer</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="teal-tag">Person In Need</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-            <div class="single-message single-message-bottom">
-              <div class="message-avatar">
-                <img src="images/avatar green dot.png" alt="avatar with green dot">
-              </div>
-              <div class="message-name">
-                <p>Post title</p>
-              </div>
-              <div class="message-tag">
-                <div class="tag-container">
-                  <p class="teal-tag">Person In Need</p>
-                </div>
-              </div>
-              <div class="message-time">
-                <p>6 hours ago</p>
-              </div>
-            </div>
-
+        <div class="right_header">
+            <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
+            <img class="black_bell" src="images/bell-fill.png" alt="Bell icon">
+            <a href="login.html"><img class="avatar" src="images/1.0 Avatar.png" alt="Avatar"></a>
         </div>
-
-      </div>
-
-    </main>
-
-    <!--Footer-->
-    <footer>
-        <div class="footer-links">
-            <div class="column">
-                <p><span>Phone</span></p>
-                <p>(000) 000-0000</p><br>
-                <p><span>Email</span></p>
-                <p>wearePHP@example.org</p>
-            </div>
-            <div class="column">
-                <p><span>P.O. Box Address</span></p>
-                <p>123 S Hawyee Ave.</p>
-                <p>Stevens Point, WI 54481</p>
-                <p>Suite 502</p>
-            </div>
-            <div class="column">
-                <p><span>Resources</span></p>
-                <p>Privacy Policy</p>
-                <p>Careers</p>
-                <p>Sponsorship & Partners</p> 
+    </header>
+        <!--Hero image (single page)-->
+        <div class="hero">
+            <img src="images/heroimagesupport.png" alt="people filling containers with bread">
+            <div class="hero_text_container">
+                <h1 class="hero_title">Connect with the community</h1>
+                <p class="hero_subtitle">Reach out to people who you can help.</p>
             </div>
         </div>
-        <div class="social-media">
-            <a href="#"><img src="images/social media footer.png"></a>
-        </div>
-    </footer>
-</body>
+        <!--Body content-->
+        <main>
+            <div id="message_container">
+                <div id="message_heading">
+                    <div class="title_header">
+                        <h1>Messages</h1>
+                        <div class="title_line"></div>
+                    </div>
+                    <div id="message_heading_right">
+                        <a href="post.html"
+                            ><input
+                                class="coral_button"
+                                type="submit"
+                                value="Archive"
+                        /></a>
+                        <a href="post.html"
+                            ><input
+                                class="teal_button"
+                                type="submit"
+                                value="Delete"
+                        /></a>
+                        <p>Select all</p>
+                    </div>
+                </div>
+                <div id="message_body">
+                    <div id="message_tab">
+                        <p>All Messages</p>
+                        <p>Person In Need</p>
+                        <p>Volunteer</p>
+                        <p>Archive</p>
+                        <p>Trash</p>
+                    </div>
+                    <div id="message_list_container">
+                        <!--Single message-->
+                        <div class="message message_top">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="teal_tag">Person In Need</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                        <!--Single message-->
+                        <div class="message message_bottom">
+                            <div id="avatar">
+                                <img
+                                    src="images/avatar green dot.png"
+                                    alt="avatar with green dot"
+                                />
+                            </div>
+                            <div id="name">
+                                <p>Post title</p>
+                            </div>
+                            <div id="tag">
+                                <div class="tag_container">
+                                    <p class="coral_tag">Volunteer</p>
+                                </div>
+                            </div>
+                            <div id="time">
+                                <p>6 hours ago</p>
+                            </div>
+                        </div>
+                        <!--End of single message-->
+                    </div>
+                    <!--end of message_body-->
+                </div>
+                <!--end of #message_list_container-->
+            </div>
+            <!--end of #message_container-->
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="footer_container">
+                <div class="footer_column">
+                    <p><span>Phone</span></p>
+                    <p>(000) 000-0000</p>
+                    <br />
+                    <p><span>Email</span></p>
+                    <p>wearePHP@example.org</p>
+                </div>
+                <div class="footer_column">
+                    <p><span>P.O. Box Address</span></p>
+                    <p>123 S Hawyee Ave.</p>
+                    <p>Stevens Point, WI 54481</p>
+                    <p>Suite 502</p>
+                </div>
+                <div class="footer_column">
+                    <p><span>Resources</span></p>
+                    <p>Privacy Policy</p>
+                    <p>Careers</p>
+                    <p>Sponsorship & Partners</p>
+                </div>
+            </div>
+            <div class="footer_social">
+                <a href="#"><img src="images/social media footer.png" /></a>
+            </div>
+        </footer>
+    </body>
 </html>

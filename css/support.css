@@ -1,77 +1,42 @@
 /* specific support styling */
 
-/* accordion fold down */
-.faq-subheader {
-    font-size: 24px;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    padding: 0px 0px 10px 0px;
-    border-bottom: 2px solid var(--teal-main);
+/* search form for support */
+form#support {
+    border: none;
+    padding: 0;
+    z-index: 500;
 }
-.faq {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.faq-section {
-    margin: 30px 20px 40px 20px;
-    min-width: 450px;
-}
-
-.faq-content p {
-    font-size: 16px;
-    padding: 20px;
-}
-summary {
-    list-style-type: none;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--black);
-    padding: 10px;
-    outline: none;
+input#support {
     text-align: left;
-    cursor: pointer;
-    position: relative;
-    border-bottom: 1px solid var(--teal-main);
+    margin: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    color: var(--black);
+    width: 700px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 18px 4px 18px 40px;
+    background: transparent
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+        no-repeat 13px center;
+    background-color: var(--white);
 }
-details[open] summary ~ * {
-    background-color: var(--light-gray);
-}
-details[open] .faq-content ~ * {
-}
-@keyframes sweep {
-    0% {
-        opacity: 0;
-        margin-top: -10px;
-    }
-    100% {
-        opacity: 1;
-        margin-top: 0px;
+@media (max-width: 700px) {
+    input#support {
+        width: 400px;
     }
 }
-details > summary::after {
-    position: absolute;
-    content: "<";
-    right: 20px;
-}
-details[open] > summary::after {
-    position: absolute;
-    content: "∨";
-    right: 20px;
-}
-details > summary::-webkit-details-marker {
-    display: none;
+input#support::placeholder {
+    color: var(--gray);
 }
 
 /* form styling stuff */
-.support-blue-module {
+.support_module {
     display: flex;
 }
-.connect-left {
+#left {
     width: 50%;
 }
-.connect-right {
+#right {
     width: 50%;
     background-color: var(--white);
     border-radius: 4px;
