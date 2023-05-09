@@ -46,9 +46,7 @@ input#support::placeholder {
 #support-form {
     padding: 20px;
 }
-#red {
-    color: var(--red);
-}
+
 .support-form label {
     font-size: 18px;
 }

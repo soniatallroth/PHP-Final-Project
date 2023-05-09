@@ -1,5 +1,4 @@
-// sticky header
-
+// sticky navbar
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 75) {
         $(".header-logo").addClass("active");

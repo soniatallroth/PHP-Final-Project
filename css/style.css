@@ -175,6 +175,8 @@ nav a:hover {
 }
 .avatar {
     height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /* Hero image */
@@ -202,9 +204,11 @@ nav a:hover {
     padding: 10px;
 }
 .hero_subtitle {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     font-size: 20px;
     padding: 10px;
-        align-self: center;
+    align-self: center;
 }
 
 /* Text headers */
@@ -279,7 +283,7 @@ nav a:hover {
 .accordion_subheader {
     font-size: 24px;
     font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     padding: 0px 0px 10px 0px;
     border-bottom: 2px solid var(--teal-main);
 }
@@ -289,8 +293,9 @@ nav a:hover {
 }
 summary {
     list-style-type: none;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     color: var(--black);
     padding: 10px;
     outline: none;
@@ -345,4 +350,180 @@ span {
 }
 .footer_social img {
     height: 35px;
+}
+
+
+/* CREATE A POST MODAL */ 
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: var(--black);
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: var(--white);
+    margin: 30px auto; /* 15% from the top and centered */
+    padding: 30px;
+    width: 900px; 
+    border-radius: 16px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* animation for modals */ 
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.close_modal_img {
+    width: 20px;
+    float: right;
+}
+.close_modal:hover,
+.close_modal:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* styles for post modal */
+#center {
+    display: flex;
+    justify-content: center;
+}
+#post_container {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-rows: 1fr 1.7fr 0.3fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "left right"
+        "left right"
+        "bottom bottom";
+    justify-items: center;
+    margin-top: 20px;
+    max-width: 886px;
+}
+#left {
+    grid-area: left;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#left img {
+    max-width: 300px;
+}
+#post_buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px 10px;
+}
+#right {
+    grid-area: right;
+    min-width: 400px;
+    float: left;
+}
+#bottom {
+    grid-area: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bottom p {
+    color: var(--black);
+    padding: 0px 30px;
+}
+#bottom p:hover {
+    text-decoration: underline;
+}
+#post_buttons select {
+    width: 150px;
+}
+/* post-specific styling */ 
+#right textarea {
+    height: 200px;
+}
+
+
+/* LOGIN MODAL */ 
+.login_modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: var(--black);
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.login_modal_content {
+    background-color: var(--light-gray);
+    margin: 30px auto; /* 15% from the top and centered */
+    padding: 10px 30px;
+    width: 450px;
+    border-radius: 16px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+
+}
+/* animation for modals */ 
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.login_close_modal_img {
+    width: 20px;
+}
+.login_close_modal:hover,
+.login_close_modal:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* modal styles */ 
+#login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 30px;
+}
+#login {
+    border-radius: 12px;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+}
+#login_header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#login_header h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#red {
+    color: var(--red);
 }
