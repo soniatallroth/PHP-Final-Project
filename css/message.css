@@ -44,15 +44,12 @@
     display: grid;
     grid-template-columns: 0.2fr 2.3fr 0.5fr;
     grid-template-rows: 0.6fr 0.8fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-auto-flow: row;
+
     grid-template-areas:
         "message-avatar message-name message-time"
         "message-avatar message-tag message-time";
     height: 80px;
     width: 100%;
-
     border-top: 1px solid var(--light-gray);
     border-left: 1px solid var(--light-gray);
     border-right: 1px solid var(--light-gray);
@@ -70,12 +67,21 @@
     grid-area: message-avatar;
     justify-self: center;
     align-self: center;
-    padding-top: 5px;
+}
+#avatar img {
+    border-radius: 50%;
+    width: 50px;
 }
 #name {
     grid-area: message-name;
     align-self: center;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+#name p {
+    font-weight: 500;
+    padding-right: 16px;
 }
 #tag {
     grid-area: message-tag;
@@ -85,7 +91,15 @@
 #time {
     grid-area: message-time;
     align-self: center;
+    display: flex;
 }
 #time p {
     color: var(--gray);
+    font-size: 14px;
+}
+
+/* Stylized checkbox */ 
+input[type="checkbox"] {
+    appearance: checkbox !important;
+    margin-left: 12px;
 }
