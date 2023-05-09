@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Home Page</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png">    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/javascript.js"></script>
+    <script src="js/stickyNav.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -23,9 +25,87 @@
             </nav>
         </div>
         <div class="right_header">
-            <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
+        <!--START OF POST MODAL-->
+            <input id="myBtn" class="coral_button" type="submit" value="Create Post"></a>
+            <!--Modal content-->
+            <div id="myModal" class="modal">
+            <div class="modal-content">
+                <img class="close_modal close_modal_img" src="images/xmark.svg" alt="xmark">
+                <div class="title_header">
+                    <h1>Create A Post</h1>
+                    <div class="title_line"></div>
+                </div>
+                    <div id="post_container">
+                        <div id="left">
+                            <img src="images/postimage.png" alt="picture of house">
+                            <a href="post.html"><input class="coral_button" type="submit" value="Add Image"/></a>
+                            <div id="post_buttons">
+                                <select>
+                                    <option>Type of work ∨</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                    <option>Type of work</option>
+                                </select>
+                                <input type="text" placeholder="Location" />
+                            </div>
+                        </div>
+                        <div id="right">
+                            <input type="text" placeholder="Post Title" />
+                            <textarea
+                                id="description"
+                                placeholder="Describe the job you need to be done"
+                            ></textarea>
+                            <div class="tag_container">
+                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">Placeholder</p>
+                                <p class="gray_tag">Add more tags +</p>
+                            </div>
+                        </div>
+                        <div id="bottom">
+                            <p class="close_modal">Save as draft</p>
+                            <input class="teal_button" type="button" value="Create a post"> 
+                        </div>
+                    </div>
+                </div> <!--End of .modal-content -->
+            </div> <!--End of #myModal-->
+        <!--END OF POST MODAL-->
             <img class="black_bell" src="images/bell-fill.png" alt="Bell icon">
-            <a href="login.html"><img class="avatar" src="images/1.0 Avatar.png" alt="Avatar"></a>
+        <!--START OF LOGIN MODAL-->
+            <img id="myBtnLogin" class="avatar" src="images/1.0 Avatar.png" alt="avatar image"></a>
+            <!--Modal content-->
+            <div id="myModalLogin" class="login_modal">
+                <div class="login_modal_content">
+                    <div id="login_container">
+                        <img class="login_close_modal login_close_modal_img" src="images/xmark.svg" alt="xmark">
+                        <div id="login">
+                            <div id="login_header">
+                                <h1>Welcome!</h1>
+                                <p>Please enter your username and password.</p>
+                            </div>
+                            <form>
+                                <label class="text-label" for="username">Your username <span id="red">*</span></label><br>
+                                <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
+                                <label class="text-label" for="password">Your password <span id="red">*</span></label><br>
+                                <input class="text-input" id="password" name="password" type="password" placeholder="********">
+                                <div class="button_container">
+                                    <a href="index.html"><input class="teal_button" type="submit" value="Log In"></a>
+                                    <a href="index.html"><input class="coral_button" type="submit" value="Sign Up"></a>
+                                </div>
+                            </form>
+                        </div>  
+                    </div> <!--End of login_container-->
+                </div> <!--End of .login_modal_content -->
+            </div> <!--End of #myModalogin-->
+        <!--END OF MODAL-->
         </div>
     </header>
     <!--Search bar (hero image)-->
@@ -224,6 +304,7 @@
         </div>
     </footer>
     <!--JS for modal-->
-    <script src="js/modal.js"></script>
+    <script src="js/loginModal.js"></script>    
+    <script src="js/postModal.js"></script>
 </body>
 </html>
