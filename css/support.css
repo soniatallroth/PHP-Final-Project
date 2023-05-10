@@ -28,15 +28,18 @@ input#support {
 input#support::placeholder {
     color: var(--gray);
 }
+select#support {
+    margin: 10px;
+}
 
 /* form styling stuff */
 .support_module {
     display: flex;
 }
-#left {
+#left_module {
     width: 50%;
 }
-#right {
+#right_module {
     width: 50%;
     background-color: var(--white);
     border-radius: 4px;
@@ -46,7 +49,6 @@ input#support::placeholder {
 #support-form {
     padding: 20px;
 }
-
 .support-form label {
     font-size: 1em;
 }

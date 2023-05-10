@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/stickyNav.js"></script>
 </head>
 <body>
-<!--Header-->
+    <!--Header-->
     <header>
         <div class="left_header">
             <a href="index.html"><img class="logo_header" src="images/phpLogo.png" alt="PHP Logo"></a>
@@ -40,17 +39,14 @@
                             <img src="images/postimage.png" alt="picture of house">
                             <a href="post.html"><input class="coral_button" type="submit" value="Add Image"/></a>
                             <div id="post_buttons">
-                                <select>
-                                    <option>Type of work ∨</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                </select>
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option>Type</option>
+                                        <option>Nannying</option>
+                                        <option>Manual labor</option>
+                                        <option>Driving</option>
+                                    </select>
+                                </div>
                                 <input type="text" placeholder="Location" />
                             </div>
                         </div>
@@ -61,12 +57,9 @@
                                 placeholder="Describe the job you need to be done"
                             ></textarea>
                             <div class="tag_container">
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">1 hour or less</p>
+                                <p class="teal_tag">Manual labor</p>
+
                                 <p class="gray_tag">Add more tags +</p>
                             </div>
                         </div>
@@ -116,47 +109,122 @@
             <form id="search">
                 <input id="search" type="text" placeholder="Search for a volunteer opportunity in your community.">
             </form>
-            <p>Filters</p>
-            <div id="search_dropdowns">
-                <select>
-                    <option>Time ∨</option>
-                    <option>Time needed</option>
-                    <option>Time needed</option>
-                </select>
-                <select>
-                    <option>Type ∨</option>
-                    <option>Type of work</option>
-                    <option>Type of work</option>
-                </select>
-                <select>
-                    <option>Date ∨</option>
-                    <option>Date</option>
-                    <option>Date</option>
-                </select>
-                <select>
-                    <option>Location ∨</option>
-                    <option>Location</option>
-                    <option>Location</option>
-                </select>
-                <p>X Clear filters</p>
-            </div>
-            <p>Sort ∨</p>
+            <div id="filter_sort_container">
+                <div id="filter_header">
+                    <h4>Filters</h4>
+                    <p>Clear filters</p>
+                </div>
+                <div id="search_dropdowns">
+                    <!--Start-->
+                    <div id="filter_container">
+                        <label>Type of work</label>
+                        <div class="custom-select" style="width:150px;">
+                            <select>
+                                <option>Select</option>
+                                <option>Nannying</option>
+                                <option>Manual labor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--End-->
+                    <!--Start-->
+                    <div id="filter_container">
+                        <label>Time</label>
+                        <div class="custom-select" style="width:150px;">
+                            <select>
+                                <option>Select</option>
+                                <option>Less than 1 hour</option>
+                                <option>1-2 hrs</option>
+                                <option>2-3 hrs</option>
+                                <option>3+ hrs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--End-->
+                    <!--Start-->
+                    <div id="filter_container">
+                        <label>Date</label>
+                        <input type="text" placeholder="MM/DD/YYYY" style="width:150px; margin: 0px">
+                    </div>
+                    <!--End-->
+                    <!--Start-->
+                    <div id="filter_container">
+                        <label>Location</label>
+                        <input type="text" placeholder="Zip code" style="width:150px; margin: 0px">
+                    </div>
+                    <!--End-->
+                </div>
+                <div id="duration">
+                    <p id="duration_label">Duration</p>
+                    <input type="radio" id="onetime" name="radio" value="One-time">
+                    <label for="recurring">One-time</label>
+                    <input type="radio" id="recurring" name="radio" value="Recurring">
+                    <label for="Recurring">Recurring</label>
+                    <input type="radio" id="both" name="radio" value="Both">
+                    <label for="Both">Both</label>
+                </div>
+                <h4>Sort</h4>
+                <!--Start-->
+                    <div id="filter_container">
+                        <div class="custom-select" style="width:150px;">
+                            <select>
+                                <option>Select</option>
+                                <option>Oldest to Newest</option>
+                                <option>Newest to Oldest</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--End-->
+
+            </div> <!--End of filter_sort_container-->
         </div>
     </div>
     <!--Body content-->
     <main>
         <!--Start of post-->
         <div id="post">
-            <div id="left">
-                <img src="images/postimage.png" alt="picture of house">
+            <div id="left_search">
+                <img src="images/PostPhotos/3.png" alt="picture of house">
             </div>
-            <div id="right">
+            <div id="right_search">
                 <div class="tag_container">
-                    <p class="teal_tag">Placeholder</p>
-                    <p class="coral_tag">Placeholder</p>
+                    <p class="teal_tag">Good with pets</p>
+                    <p class="coral_tag">Recurring task</p>
                 </div>
-                <h3>Heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus faucibus sit sit facilisis dictumst.</p>
+                <h3>Petsitter needed</h3>
+                <p>My husband and I are going on vacation on May 20th-27th, and we are hoping to find someone to look after our dogs while we’re away. Someone friendly who has experience watching animals is preferable.</p>
+                <br><p id="gray">3 days ago</p>
+            </div>
+        </div>
+        <!--End of post-->
+        <!--Start of post-->
+        <div id="post">
+            <div id="left_search">
+                <img src="images/PostPhotos/2.png" alt="picture of house">
+            </div>
+            <div id="right_search">
+                <div class="tag_container">
+                    <p class="teal_tag">Electrician</p>
+                    <p class="coral_tag">One-time task</p>
+                </div>
+                <h3>Electrician work</h3>
+                <p>We are looking for a certified electrician to help rewire the lights in our kitchen, which has gotten very old and finicky. Certification is required, and weekend availability is preferred.</p>
+                <br><p id="gray">3 days ago</p>
+            </div>
+        </div>
+        <!--End of post-->
+        <!--Start of post-->
+        <div id="post">
+            <div id="left_search">
+                <img src="images/PostPhotos/1.png" alt="picture of house">
+            </div>
+            <div id="right_search">
+                <div class="tag_container">
+                    <p class="teal_tag">Manual labor</p>
+                    <p class="coral_tag">One-time task</p>
+                </div>
+                <h3>Landscaping</h3>
+                <p>Looking for someone to help with parts of my yard that have not been worked on in a while. Tools will be provided.</p>
                 <br><p id="gray">3 days ago</p>
             </div>
         </div>
@@ -195,5 +263,6 @@
     <!--JS for modal-->
     <script src="js/loginModal.js"></script>    
     <script src="js/postModal.js"></script>
+    <script src="js/customSelect.js"></script>
 </body>
 </html>

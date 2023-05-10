@@ -75,6 +75,7 @@ input#search::placeholder {
 #intro_image {
     grid-area: intro-image;
     max-width: 500px;
+    justify-self: center;
 }
 
 /* fake image caurousel */

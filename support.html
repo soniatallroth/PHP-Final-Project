@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/support.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/stickyNav.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -40,17 +39,14 @@
                             <img src="images/postimage.png" alt="picture of house">
                             <a href="post.html"><input class="coral_button" type="submit" value="Add Image"/></a>
                             <div id="post_buttons">
-                                <select>
-                                    <option>Type of work ∨</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                </select>
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option>Type</option>
+                                        <option>Nannying</option>
+                                        <option>Manual labor</option>
+                                        <option>Driving</option>
+                                    </select>
+                                </div>
                                 <input type="text" placeholder="Location" />
                             </div>
                         </div>
@@ -61,12 +57,9 @@
                                 placeholder="Describe the job you need to be done"
                             ></textarea>
                             <div class="tag_container">
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">1 hour or less</p>
+                                <p class="teal_tag">Manual labor</p>
+
                                 <p class="gray_tag">Add more tags +</p>
                             </div>
                         </div>
@@ -299,14 +292,14 @@
             </div>
         </main>
         <div class="blue_module support_module">
-            <div id="left">
+            <div id="left_module">
                 <div class="title_header">
-                    <h2>Connect with the community</h2>
+                    <h2>Need help with the website?</h2>
                     <div class="title_line"></div>
                 </div>
                 <p>Fill out the form to submit a support request, or view our contact information and resources available below.</p>
             </div>
-            <div id="right">
+            <div id="right_module">
                 <form id="support-form">
                     <label>First name <span id="red">*</span></label><br>
                     <input type="text" placeholder="Jamie"><br>
@@ -314,8 +307,14 @@
                     <input type="text" placeholder="Schwobe"><br>
                     <label>Email address <span id="red">*</span></label><br>
                     <input type="text" placeholder="email.example@mail.com"><br>
-                    <label>Reason for request <span id="red">*</span></label><br>
-                    <input type="text" placeholder="Select from dropdown"><br> 
+                    <label id="request">Reason for request <span id="red">*</span></label>
+                    <div class="custom-select" style="width:150px; margin: 10px 0px">
+                        <select>
+                            <option>Select</option>
+                            <option>Tech support</option>
+                            <option>Suggestion</option>
+                        </select>
+                    </div>
                     <label>How can we help you? <span id="red">*</span></label><br>
                     <input type="text" placeholder="Type here"><br>
                     <div class="button_container">
@@ -354,5 +353,6 @@
     <!--JS for modal-->
     <script src="js/loginModal.js"></script>    
     <script src="js/postModal.js"></script>
+    <script src="js/customSelect.js"></script>
 </body>
 </html>

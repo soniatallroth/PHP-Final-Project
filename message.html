@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/message.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/stickyNav.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -40,17 +39,14 @@
                             <img src="images/postimage.png" alt="picture of house">
                             <a href="post.html"><input class="coral_button" type="submit" value="Add Image"/></a>
                             <div id="post_buttons">
-                                <select>
-                                    <option>Type of work ∨</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                </select>
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option>Type</option>
+                                        <option>Nannying</option>
+                                        <option>Manual labor</option>
+                                        <option>Driving</option>
+                                    </select>
+                                </div>
                                 <input type="text" placeholder="Location" />
                             </div>
                         </div>
@@ -61,12 +57,9 @@
                                 placeholder="Describe the job you need to be done"
                             ></textarea>
                             <div class="tag_container">
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">1 hour or less</p>
+                                <p class="teal_tag">Manual labor</p>
+
                                 <p class="gray_tag">Add more tags +</p>
                             </div>
                         </div>
@@ -219,5 +212,6 @@
     <!--JS for modal-->
     <script src="js/loginModal.js"></script>    
     <script src="js/postModal.js"></script>
+    <script src="js/customSelect.js"></script>
 </body>
 </html>

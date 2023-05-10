@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="images/favicon/favicon.png">    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/stickyNav.js"></script>
 </head>
 <body>
     <!--Header-->
@@ -32,7 +31,7 @@
             <div class="modal-content">
                 <img class="close_modal close_modal_img" src="images/xmark.svg" alt="xmark">
                 <div class="title_header">
-                    <h3>Create A Post</h3>
+                    <h2>Create A Post</h2>
                     <div class="title_line"></div>
                 </div>
                     <div id="post_container">
@@ -40,17 +39,14 @@
                             <img src="images/postimage.png" alt="picture of house">
                             <a href="post.html"><input class="coral_button" type="submit" value="Add Image"/></a>
                             <div id="post_buttons">
-                                <select>
-                                    <option>Type of work ∨</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                    <option>Type of work</option>
-                                </select>
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option>Type</option>
+                                        <option>Nannying</option>
+                                        <option>Manual labor</option>
+                                        <option>Driving</option>
+                                    </select>
+                                </div>
                                 <input type="text" placeholder="Location" />
                             </div>
                         </div>
@@ -61,12 +57,9 @@
                                 placeholder="Describe the job you need to be done"
                             ></textarea>
                             <div class="tag_container">
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
-                                <p class="teal_tag">Placeholder</p>
+                                <p class="teal_tag">1 hour or less</p>
+                                <p class="teal_tag">Manual labor</p>
+
                                 <p class="gray_tag">Add more tags +</p>
                             </div>
                         </div>
@@ -126,9 +119,8 @@
                 <img src="images/intro images.png" alt="people smiling">
             </div>
             <div class="text_header">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>People Helping People is a non-profit organization dedicated to enriching the community through facilitating connections between volunteers and people in need. As a central figure in central Wisconsin for many years, providing a platform to create opportunities for positive change in our community means everything to us. Whether you’re looking for a trained electrician or a kind babysitter, we’re here to help.</p>
+                <p>Below you’ll find more information about how you can seek help, help others, and further connect to the community.</p>
             </div>
             <div class="title_header">
                 <h2>What is People Helping People?</h2>
@@ -143,20 +135,20 @@
             <div class="card">
                 <img class="teal_badge" alt="question mark" src="images/question badge.png">
                 <h3>Ask for help</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae tortor condimentum lacinia.</p>
+                <p>Having trouble around your home? Need help moving your furniture, or maybe just need someone to mow your lawn? No matter the task, here is the place to ask for help. The button below will take you to a page where you can create a post and specify what task your community can help with.</p>
                 <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
             </div>
             <div class="card">
                 <img class="teal_badge" alt="question mark" src="images/search badge.png">
                 <h3>Volunteer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae tortor condimentum lacinia.</p>
-                <a href="search.html"><input class="coral_button" type="submit" value="Create Post"></a>
+                <p>Looking for ways to help out your community, or ways to use your unique skill set? The button below will take you to the Posts page to browse posts by people in need. We assure you that, no matter the skill set, there is a way to help.</p>
+                <a href="search.html"><input class="coral_button" type="submit" value="Search for a post"></a>
             </div>
             <div class="card">
                 <img class="teal_badge" alt="question mark" src="images/money badge.png">
                 <h3>Donate</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae tortor condimentum lacinia.</p>
-                <a href="search.html"><input class="coral_button" type="submit" value="Create Post"></a>
+                <p>As a nonprofit, anything you can do to contribute is greatly appreciated. Anything you’re willing to give will go directly towards the cause of connecting volunteers and people in need.</p>
+                <a href="search.html"><input class="coral_button" type="submit" value="Donate online"></a>
             </div>
         </div>
     </main>
@@ -197,5 +189,6 @@
     <!--JS for modal-->
     <script src="js/loginModal.js"></script>    
     <script src="js/postModal.js"></script>
+    <script src="js/customSelect.js"></script>
 </body>
 </html>
